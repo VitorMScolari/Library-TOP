@@ -1,7 +1,7 @@
 let myLibrary = [];
 
 const container = document.querySelector('#container');
-
+const addBtn = document.querySelector('.addBtn');
 
 class Book{
     constructor(title, author, pages, read) {
@@ -13,7 +13,16 @@ class Book{
 }
 
 function addBookToLibrary() {
-    myLibrary.push(Book);
+   
+    let book = {
+        id: new Book(),
+        title: document.querySelector('[data-title]').value,
+        title: document.querySelector('[data-author]').value,
+        title: document.querySelector('[data-pages]').value,
+        title: document.querySelector('[data-read]').value,
+    }
+
+    myLibrary.push(book);
 }
 
 function loopMyLibrary() {
@@ -23,3 +32,6 @@ function loopMyLibrary() {
         container.appendChild(div)
     })
 }
+
+
+addBtn.addEventListener('click', addBookToLibrary)
