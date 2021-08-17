@@ -1,31 +1,42 @@
 html {
     height: 100%;
     min-height: 100%;
-    box-sizing: border-box;
-    margin: none;
+    margin: 0px;
 }
 
 body {
     height: 100%;
+    width: 100%;
+    margin: 0px;
 }
 
 #display {
+    background-color: grey;
     display: flex;
     justify-content: center; 
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 20vh;
-    width: 100vh;
+    height: 40vh;
+    width: 100%;
+    overflow: hidden;
 }
 
-/* .form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-} */
+.addBook {
+    margin: 10px;
+}
 
 .inputDiv {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
     margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.btnAdd {
+    background-color: red;
+    border: 1px solid black;
+    border-radius: 3%;
 }
